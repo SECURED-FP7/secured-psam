@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PSA Manifest instance - version 1.1 - 3 Sep 2014 -->
+<PSAManifest xmlns="https://www.secured-fp7.eu/ref/PSA_manifest/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.secured-fp7.eu/ref/PSA_manifest/ file:PSA_manifest_v1.1.xsd">
+    <general_info>
+        <PSA_ID>reencryptPSA</PSA_ID>
+        <name>reencrypt</name>
+        <description>Rencryption PSA allows the user to enjoy of a safety browsing experience, independent of the operative system or browser version when they happen through HTTP protocol. It keeps a continuous monitoring of all user connections to Internet that use the SSL/TLS version of HTTP or also known as HTTPS. If detect a weak or vulnerable version allows to modify in-the-fly the configuration of the traffic to use the most secure version. Also it can be configured to deny HTTP.</description>
+        <web_site>https://www.secured-fp7.eu/</web_site>
+        <version>1.00</version>
+        <vendor>Telefonica I+D</vendor>
+        <author>Antonio Pastor</author>
+        <EULA>Copyright (C) 2016  Telefonica I+D. This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.</EULA>
+        <licence>Freeware</licence>
+    </general_info>
+    <functionality>
+        <capability>
+            <access_control>
+                <traffic_filter>
+                    <application_filter>
+                        <name>Web HTTPS proxy</name>
+                        <implementedBy>reencryption</implementedBy>
+                        <type>forward web proxy</type>
+                    </application_filter>
+                </traffic_filter>
+           </access_control>
+            <HSPL_capability>
+                <capability_list>TLS_protocol</capability_list>
+                <capability_list>Protection_integrity</capability_list>
+                <capability_list>Protection_confidentiality</capability_list>
+                <capability_list>reencrypt</capability_list>
+            </HSPL_capability>
+        </capability>
+        <M2L_translation_info>
+            <security_control>
+                <id>reencryption</id>
+                <name>Web HTTPS proxy</name>
+                <description>This plugin convers MSPL to reencryption configuration</description>
+                <plugin>
+                    <id>reencryption_M2L_plugin</id>
+                    <name>Web HTTPS proxy</name>
+                    <URL>http://195.235.93.146:8080/v1/PSA/M2Lplugins/PSA-reencryption</URL>
+                    <command>none</command>
+                </plugin>
+                <configuration_file>reencryption_M2L_plugin.jar</configuration_file>
+            </security_control>
+        </M2L_translation_info>
+        <performance>
+            <network_throughput unit="Mbit/s">
+                <value>10</value>
+            </network_throughput>
+            <simultaneous_connections unit="conn/s">
+                <value>10</value>
+            </simultaneous_connections>
+            <max_numer_of_operations_rules>2</max_numer_of_operations_rules>
+            <max_numer_of_users>10</max_numer_of_users>
+        </performance>
+	<optimization_parameter cost="0" latency="0" rating="0" />
+    </functionality>
+    <execution_model>
+        <infrastructure>
+            <hw_requirement>
+                <cpu_unit>1</cpu_unit>
+                <cpu_architecture>x86_64</cpu_architecture>
+                <cpu_family>Intel</cpu_family>
+                <RAM_size unit="GB">
+                    <value>1</value>
+                </RAM_size>
+                <disk_size unit="GB">
+                    <value>2</value>
+                </disk_size>
+                <bandwidth unit="Mbit/s">
+                    <value>10</value>
+                </bandwidth>
+                <max_delay unit="ms">
+                    <value>2000</value>
+                </max_delay>
+            </hw_requirement>
+            <sw_requirement>
+                <OS_type>Debian</OS_type>
+                <OS_version>7.0</OS_version>
+                <OS_architecture>x86_64</OS_architecture>
+            </sw_requirement>
+        </infrastructure>
+        <security_availability/>
+        <mobility>
+            <migration_support>cold migration</migration_support>
+            <type>stateless</type>
+        </mobility>
+        <PSC_dependency/>
+        <additional_requirement/>
+    </execution_model>
+    <configuration>
+        <PSA_format>qcow2</PSA_format>
+        <security_control_configuration>
+            <security_control_ID>reencryption_M2L_plugin</security_control_ID>
+            <configuration_file>reencryption_M2L_plugin.jar</configuration_file>
+            <executable>java</executable>
+        </security_control_configuration>
+        <network_card_no>0</network_card_no>
+        <kernel_configuration />
+    </configuration>
+    <monitoring>
+        <input_bandwidth unit="Kbit/s">
+            <value>100</value>
+        </input_bandwidth>
+        <output_bandwidth unit="Kbit/s">
+            <value>10</value>
+        </output_bandwidth>
+        <delay unit="ms">
+            <value>10</value>
+        </delay>
+    </monitoring>
+</PSAManifest>

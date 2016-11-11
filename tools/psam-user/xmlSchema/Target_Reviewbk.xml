@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:associationList xmlns:tns="http://www.example.org/AssociationList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/AssociationList ../../java/schema/AssociationList_Schema.xsd ">
+  
+  	<tns:associations Name="antiparental_control_proxies">
+		<tns:IP ip_value="77.242.188.42" />
+	</tns:associations>
+	
+	<tns:associations Name="family_shield_dns">
+		<tns:IP ip_value="130.192.225.238" />
+	</tns:associations>
+  
+  <tns:associations Name="vtt_address">
+		<tns:IP ip_value="123.45.67.89" />
+		<tns:IP ip_value="123.45.67.90" />
+		<tns:IP ip_value="123.45.67.91" />
+	</tns:associations>
+	
+	<tns:associations Name="default_gateway">
+		<tns:IP ip_value="1.1.1.1" />
+	</tns:associations>
+	
+	
+</tns:associationList>

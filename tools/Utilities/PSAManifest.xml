@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PSA Manifest instance - version 1.1 - 3 Sep 2014 -->
+<PSAManifest xmlns="https://www.secured-fp7.eu/ref/PSA_manifest/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.secured-fp7.eu/ref/PSA_manifest/ file:PSA_manifest_v1.1.xsd">
+    <general_info>
+        <PSA_ID></PSA_ID>
+        <name></name>
+        <description></description>
+        <web_site></web_site>
+        <version></version>
+        <vendor></vendor>
+        <author></author>
+        <EULA></EULA>
+        <licence></licence>
+    </general_info>
+    <functionality>
+        <capability>
+            <access_control>
+            <traffic_filter>
+                <stateful>
+                    <name></name>
+                    <implementedBy></implementedBy>
+                    <type></type>
+                </stateful>
+            </traffic_filter>
+           </access_control>
+              <HSPL_capability>
+        <capability_list></capability_list>
+        <capability_list></capability_list>
+      </HSPL_capability>
+        </capability>
+        <M2L_translation_info>
+            <security_control>
+                <id></id>
+                <name></name>
+                <description></description>
+                <plugin>
+                    <id></id>
+                    <name></name>
+                    <URL></URL>
+                    <command></command>
+                    <command></command>
+                </plugin>
+                <configuration_file></configuration_file>
+            </security_control>
+        </M2L_translation_info>
+        <performance>
+            <network_throughput unit="Mbit/s">
+                <value></value>
+            </network_throughput>
+            <simultaneous_connections unit="conn/s">
+                <value></value>
+            </simultaneous_connections>
+            <max_numer_of_operations_rules></max_numer_of_operations_rules>
+            <max_numer_of_users></max_numer_of_users>
+        </performance>
+    	<optimization_parameter cost="0" latency="0" rating="0"/>
+    </functionality>
+    <execution_model>
+        <infrastructure>
+            <hw_requirement>
+                <cpu_unit></cpu_unit>
+                <cpu_architecture></cpu_architecture>
+                <cpu_family></cpu_family>
+                <RAM_size unit="GB">
+                    <value></value>
+                </RAM_size>
+                <disk_size unit="GB">
+                    <value></value>
+                </disk_size>
+                <bandwidth unit="Mbit/s">
+                    <value></value>
+                </bandwidth>
+                <max_delay unit="ms">
+                    <value></value>
+                </max_delay>
+            </hw_requirement>
+            <sw_requirement>
+                <OS_type></OS_type>
+                <OS_version></OS_version>
+                <OS_architecture></OS_architecture>
+            </sw_requirement>
+        </infrastructure>
+        <security_availability/>
+        <mobility>
+            <migration_support></migration_support>
+            <type></type>
+        </mobility>
+        <PSC_dependency/>
+        <additional_requirement/>
+    </execution_model>
+    <configuration>
+        <PSA_format></PSA_format>
+        <security_control_configuration>
+            <security_control_ID></security_control_ID>
+            <configuration_file></configuration_file>
+            <executable></executable>
+        </security_control_configuration>
+        <network_card_no></network_card_no>
+        <network_card_configuration>
+            <card_ID></card_ID>
+            <MAC_address></MAC_address>
+            <IP_address></IP_address>
+            <netmask></netmask>
+        </network_card_configuration>
+        <network_card_configuration>
+            <card_ID></card_ID>
+            <MAC_address></MAC_address>
+            <IP_address></IP_address>
+            <netmask></netmask>
+        </network_card_configuration>
+        <network_configuration>
+            <gateway_IP_address></gateway_IP_address>
+            <DNS_IP_address></DNS_IP_address>
+        </network_configuration>
+        <kernel_configuration/>
+    </configuration>
+    <monitoring>
+        <input_bandwidth unit="Kbit/s">
+            <value></value>
+        </input_bandwidth>
+        <output_bandwidth unit="Kbit/s">
+            <value></value>
+        </output_bandwidth>
+        <delay unit="ms">
+            <value></value>
+        </delay>
+    </monitoring>
+</PSAManifest>

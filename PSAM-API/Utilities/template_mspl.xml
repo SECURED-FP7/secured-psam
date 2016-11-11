@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ITResource xmlns="http://modeliosoft/xsddesigner/a22bd60b-ee3d-425c-8618-beb6a854051a/ITResource.xsd" ID="">
+    <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RuleSetConfiguration">
+        <capability>
+            <Name> </Name>
+        </capability>
+        <defaultAction xsi:type="">
+        </defaultAction>
+        <configurationRule>
+            <externalData xsi:type="">
+                <value> </value>
+            </externalData>
+            <Name> </Name>
+            <isCNF></isCNF>
+            <HSPL HSPL_id="" HSPL_text=""/>
+        </configurationRule>
+        <resolutionStrategy xsi:type=""/>
+        <Name> </Name>
+    </configuration>
+</ITResource>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<secured_PSAManifest:PSAManifest xmlns:secured_PSAManifest="https://www.secured-fp7.eu/ref/PSA_manifest/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.secured-fp7.eu/ref/PSA_manifest/ ../schema/PSA_manifest.xsd ">
+  <secured_PSAManifest:general_info>
+    <secured_PSAManifest:PSA_ID>Protection_integrity</secured_PSAManifest:PSA_ID>
+    <secured_PSAManifest:name>Protection_integrity</secured_PSAManifest:name>
+  </secured_PSAManifest:general_info>
+  <secured_PSAManifest:functionality>
+    <secured_PSAManifest:capability>
+      <secured_PSAManifest:HSPL_capability>
+        <secured_PSAManifest:capability_list>Protection_integrity</secured_PSAManifest:capability_list>
+      </secured_PSAManifest:HSPL_capability>
+    </secured_PSAManifest:capability>
+    <secured_PSAManifest:optimization_parameter cost="0" latency="0" rating="0"/>
+  </secured_PSAManifest:functionality>
+  <secured_PSAManifest:execution_model>
+    <secured_PSAManifest:infrastructure>
+      <secured_PSAManifest:hw_requirement>
+        <secured_PSAManifest:cpu_unit>0</secured_PSAManifest:cpu_unit>
+        <secured_PSAManifest:RAM_size/>
+      </secured_PSAManifest:hw_requirement>
+    </secured_PSAManifest:infrastructure>
+  </secured_PSAManifest:execution_model>
+</secured_PSAManifest:PSAManifest>
